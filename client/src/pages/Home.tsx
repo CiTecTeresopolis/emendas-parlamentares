@@ -46,7 +46,7 @@ export default function Home() {
     total_por_autor,
     total_por_origem,
     total_por_funcao,
-    total_por_mes,
+    total_por_ano,
   } = data.metrics;
 
   const raw_data = data.raw_data;
@@ -106,22 +106,23 @@ export default function Home() {
             subtitle="Maior fonte de recursos"
             icon={<BarChart3 />}
           />
-          <MetricCard
+          {/* <MetricCard
             title="Pico Histórico"
             value="Outubro"
             subtitle="Maior atividade financeira"
             icon={<Calendar />}
-          />
+          /> */}
           <MetricCard
             title="Autores"
             value={total_por_autor.length}
             subtitle="Quantidade de Parlamentares Contribuintes"
             icon={<Globe />}
           />
+          <MetricCard title="" value={""} subtitle="" icon={""} />
         </section>
 
         {/* Charts Section - 2/3 and 1/3 split */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
           <div className="xl:col-span-2 bg-card border border-border p-10 rounded-[2.5rem] relative overflow-hidden">
             <div className="flex justify-between items-center mb-12">
               <div className="flex items-center gap-3">
@@ -133,7 +134,7 @@ export default function Home() {
               <div className="h-px flex-1 mx-8 bg-white/5" />
             </div>
             <div className="h-[450px]">
-              <TimeSeriesChart data={total_por_mes} />
+              <TimeSeriesChart data={total_por_ano} />
             </div>
           </div>
 
@@ -145,10 +146,10 @@ export default function Home() {
               <StructureChart data={total_por_funcao} />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Banner Section */}
-        <section className="bg-primary p-16 rounded-[3.5rem] flex flex-col xl:flex-row items-center justify-between gap-12">
+        {/* <section className="bg-primary p-16 rounded-[3.5rem] flex flex-col xl:flex-row items-center justify-between gap-12">
           <div className="max-w-xl">
             <h2 className="text-background text-6xl font-black leading-[0.85] mb-6 uppercase italic tracking-tighter">
               Parlamentares <br /> que mais contribuíram
@@ -160,7 +161,7 @@ export default function Home() {
           <div className="w-full xl:flex-1 bg-background/10 backdrop-blur-3xl rounded-[2rem] p-10 border border-white/10 shadow-3xl">
             <TopResourcesChart data={total_por_autor} />
           </div>
-        </section>
+        </section> */}
 
         <div className="w-full mt-10">
           <ParliamentaryAmendmentsTable data={raw_data} />

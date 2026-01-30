@@ -8,25 +8,11 @@ import {
   LabelList,
 } from "recharts";
 
-const MONTH_NAMES: Record<string, string> = {
-  "01": "JAN",
-  "02": "FEV",
-  "03": "MAR",
-  "04": "ABR",
-  "05": "MAI",
-  "06": "JUN",
-  "07": "JUL",
-  "08": "AGO",
-  "09": "SET",
-  "10": "OUT",
-  "11": "NOV",
-  "12": "DEZ",
-};
 
 export default function TimeSeriesChart({ data }: { data: any[] }) {
   const formattedData = data.map(item => ({
     ...item,
-    MesLabel: MONTH_NAMES[item.Mes] || item.Mes,
+    MesLabel: item.Ano,
   }));
 
   return (
@@ -54,7 +40,7 @@ export default function TimeSeriesChart({ data }: { data: any[] }) {
             axisLine={{ stroke: "rgba(255,255,255,0.2)" }}
           />
           <YAxis
-            domain={[0, "dataMax + 10000000"]}
+            domain={[0, "dataMax + 1000000"]}
             tick={{ fill: "#000000", fontSize: 12, fontWeight: 700 }}
             axisLine={{ stroke: "rgba(255,255,255,0.2)" }}
             tickFormatter={v => `${(v / 1_000_000).toFixed(0)}M`}
