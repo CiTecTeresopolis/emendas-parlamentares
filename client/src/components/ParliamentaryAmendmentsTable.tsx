@@ -20,7 +20,7 @@ export default function ParliamentaryAmendmentsTable({
       <div className="p-10 border-b border-border flex items-center justify-between bg-background/20">
         <div>
           <h3 className="text-2xl font-black uppercase italic tracking-tighter text-foreground">
-            Detalhamento de{" "}
+            Detalhamento das{" "}
             <span className="text-primary">Emendas Parlamentares</span>
           </h3>
           <p className="text-[10px] font-mono text-muted-foreground uppercase tracking-[0.4em] mt-2">

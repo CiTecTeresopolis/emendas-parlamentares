@@ -108,14 +108,14 @@ export default function Home() {
           <MetricCard
             title="Fonte de Origem Principal"
             value={total_por_origem[0].Estrutura.replace(
-              "MINISTERIO DO",
-              "Min."
+              "MINISTERIO DO ESPORTE",
+              "MISE"
             )}
-            subtitle="Maior fonte de recursos"
+            subtitle="O Maior Valor é Originário do Ministério do Esporte"
             icon={<BarChart3 />}
           />
           <MetricCard
-            title="Destino Principal"
+            title="Principal Atividade Contemplada"
             value={categoriaLider[0]}
             subtitle={`Com mais de R$ ${(categoriaLider[1] / 1_000_000).toFixed(2)}M alocados`}
             icon={<Target />}
@@ -123,7 +123,7 @@ export default function Home() {
           <MetricCard
             title="Autores"
             value={total_por_autor.length}
-            subtitle="Quantidade de Parlamentares Contribuintes"
+            subtitle="Quantidade de Autores das Emendas"
             icon={<Globe />}
           />
         </section>
