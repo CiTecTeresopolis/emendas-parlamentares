@@ -109,7 +109,7 @@ export default function Home() {
             title="Fonte de Origem Principal"
             value={total_por_origem[0].Estrutura.replace(
               "MINISTERIO DO ESPORTE",
-              "MISE"
+              "MESP"
             )}
             subtitle="O Maior Valor é Originário do Ministério do Esporte"
             icon={<BarChart3 />}
