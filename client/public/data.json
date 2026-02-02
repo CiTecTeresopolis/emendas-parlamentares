@@ -1,108 +1,99 @@
 {
   "raw_data": [
     {
-      "origem": "Ministério do Turismo",
+      "origem": "MINISTERIO DO TURISMO",
       "tipo_emenda": "Emenda Individual - Transferências com Finalidade Definida",
       "autor": "Max Lemos",
       "partido": "PDT",
-      "programa": " Fomento a Eventos Turisticos - Emendas Parlamentares de Comissao -RP8",
+      "programa": "Fomento a Eventos Turisticos - Emendas Parlamentares de Comissao -RP8",
       "codigo_programa": "5400020250024",
       "tipo_instrumento": "Convênio",
       "n_proposta": "048043/2025",
       "valor_previsto": 304647.0,
-      "objeto": "Contratação de um atração artística para a realização das festas de final de ano no Município de Teresópolis/RJ"
+      "objeto": "Contratação de um atração artística para a realização das festas de final de ano no Município de Teresópolis/RJ",
+      "categoria": "Cultura"
     },
     {
-      "origem": "Ministério da Educação - FNDE",
+      "origem": "MINISTERIO DA EDUCACAO - FUNDO NACIONAL DE DESENVOLVIMENTO DA EDUCACAO",
       "tipo_emenda": "Emenda Individual - Transferências com Finalidade Definida",
       "autor": "Carlos Portinho",
       "partido": "PL",
-      "programa": " Programa SIMEC/PAR",
+      "programa": "Programa SIMEC/PAR",
       "codigo_programa": "2629820250001",
-      "tipo_instrumento": " Termo de Compromisso",
+      "tipo_instrumento": "Termo de Compromisso",
       "n_proposta": "068187/2025",
       "valor_previsto": 500000.0,
-      "objeto": "Aquisição de mobiliario escolar"
+      "objeto": "Aquisição de mobiliario escolar",
+      "categoria": "Educação"
     },
     {
-      "origem": "Ministério do Esporte",
+      "origem": "MINISTERIO DO ESPORTE",
       "tipo_emenda": "Emenda Individual - Transferências com Finalidade Definida",
       "autor": "Bebeto",
       "partido": "PODEMOS",
-      "programa": " Apoio a Implantacao e Modernizacao de Infraestrutura para Esporte Amador, Educacional, Recreativo e de Lazer -SNEAELIS (Emenda de Comissão - RP8)",
+      "programa": "Apoio a Implantacao e Modernizacao de Infraestrutura para Esporte Amador, Educacional, Recreativo e de Lazer -SNEAELIS (Emenda de Comissão - RP8)",
       "codigo_programa": "5100020250027",
       "tipo_instrumento": "Convênio ou Contrato de Repasse",
       "n_proposta": "068157/2025",
       "valor_previsto": 3000000.0,
-      "objeto": "Ampliação, modificação e recuperação do Ginásio de Esporte e Lazer no Município de Teresópolis/RJ"
+      "objeto": "Ampliação, modificação e recuperação do Ginásio de Esporte e da Vila Olímpica no Município de Teresópolis/RJ",
+      "categoria": "Esporte"
     },
     {
-      "origem": "Ministério do Esporte",
+      "origem": "MINISTERIO DO ESPORTE",
       "tipo_emenda": "Emenda Individual - Transferências com Finalidade Definida",
       "autor": "Hugo Leal",
       "partido": "PSD",
-      "programa": " Apoio a Implantacao e Modernizacao de Infraestrutura para Esporte Amador, Educacional, Recreativo e de Lazer -SNEAELIS (Emenda Parlamentar Individual - RP6)",
+      "programa": "Apoio a Implantacao e Modernizacao de Infraestrutura para Esporte Amador, Educacional, Recreativo e de Lazer -SNEAELIS (Emenda Parlamentar Individual - RP6)",
       "codigo_programa": "5100020250008",
       "tipo_instrumento": "Convênio",
       "n_proposta": "029663/2025",
       "valor_previsto": 490000.0,
-      "objeto": " Aquisição e Instalação de Equipamentos Esportivos e Playgrounds no município de Teresópolis/RJ"
+      "objeto": "Aquisição e Instalação de Equipamentos Esportivos e Playgrounds no município de Teresópolis/RJ",
+      "categoria": "Esporte"
     },
     {
-      "origem": "Ministério da Integração e do Desenvolvimento Regional",
+      "origem": "MINISTÉRIO DA INTEGRAÇÃO E DO DESENVOLVIMENTO REGIONAL",
       "tipo_emenda": "Emenda Individual - Transferências com Finalidade Definida",
       "autor": "Hugo Leal",
       "partido": "PSD",
       "programa": "Gestão de Riscos e de Desastres",
       "codigo_programa": "5300020250027",
       "tipo_instrumento": "Convênio",
-      "n_proposta": " 062375/2025",
+      "n_proposta": "062375/2025",
       "valor_previsto": 1000000.0,
-      "objeto": "Aquisição de equipamentos para Secretaria Municipal de Defesa Civil do Município de Teresópolis/RJ"
+      "objeto": "Aquisição de equipamentos para Secretaria Municipal de Defesa Civil do Município de Teresópolis/RJ",
+      "categoria": "Segurança Pública"
     },
     {
-      "origem": "Ministério do Esporte",
+      "origem": "MINISTERIO DO ESPORTE",
       "tipo_emenda": "Emenda Individual - Transferências com Finalidade Definida",
       "autor": "Carlos Portinho",
       "partido": "PL",
-      "programa": " Apoio a Implantacao e Modernizacao de Infraestrutura para Esporte Amador, Educacional, Recreativo e de Lazer -SNEAELIS (Emenda Parlamentar Individual - RP6)",
+      "programa": "Apoio a Implantacao e Modernizacao de Infraestrutura para Esporte Amador, Educacional, Recreativo e de Lazer -SNEAELIS (Emenda Parlamentar Individual - RP6)",
       "codigo_programa": "5100020250008",
       "tipo_instrumento": "Contrato de Repasse",
       "n_proposta": "029289/2025",
       "valor_previsto": 1432500.0,
-      "objeto": "Construção do Espaço Esportivo Comunitário, no Munícipio de Teresópolis/RJ."
+      "objeto": "Construção do Espaço Esportivo Comunitário, no Munícipio de Teresópolis/RJ.",
+      "categoria": "Esporte"
     },
     {
-      "origem": "Ministério da Integração e do Desenvolvimento Regional",
+      "origem": "MINISTÉRIO DA INTEGRAÇÃO E DO DESENVOLVIMENTO REGIONAL",
       "tipo_emenda": "Emenda Individual - Transferências com Finalidade Definida",
-      "autor": "Hugo Leal",
-      "partido": "PSD",
-      "programa": "Gestão de Riscos e de Desastres",
-      "codigo_programa": "5300020250027",
+      "autor": "Marcelo Crivella",
+      "partido": "REPUBLICANOS",
+      "programa": "Apoio a Projetos de Desenvolvimento Sustentável Local Integrado - RP8 - Emenda de Comissão - Equipamentos e Obras - CINDRE",
+      "codigo_programa": "5300020250022",
       "tipo_instrumento": "Convênio",
-      "n_proposta": "062363/2025",
-      "valor_previsto": 1000000.0,
-      "objeto": "Aquisição de veículos e equipamentos para a Secretaria Municipal de Defesa Civil do município de Teresópolis/RJ"
-    },
-    {
-      "origem": "Ministério da Integração e do Desenvolvimento Regional",
-      "tipo_emenda": "Emenda Individual - Transferências com Finalidade Definida",
-      "autor": "Hugo Leal",
-      "partido": "PSD",
-      "programa": "Desenvolvimento Regional e Territorial e Urbano",
-      "codigo_programa": "5300020250028",
-      "tipo_instrumento": "Convênio ou Contrato de Repasse",
-      "n_proposta": "062402/2025",
-      "valor_previsto": 1000000.0,
-      "objeto": "Obras de Infraestrutura Urbana no Município de Teresópolis/RJ"
+      "n_proposta": "057664/2025",
+      "valor_previsto": 716250.0,
+      "objeto": "Aquisição de máquina e equipamentos para apoio à infraestrutura produtivas.",
+      "categoria": "Infraestrutura"
     }
   ],
   "metrics": {
     "total_por_autor": [
-      {
-        "Autor": "Hugo Leal",
-        "Valor": 14900000
-      },
       {
         "Autor": "Bebeto",
         "Valor": 3000000.0
@@ -111,7 +102,10 @@
         "Autor": "Carlos Portinho",
         "Valor": 1932500.0
       },
-      
+      {
+        "Autor": "Hugo Leal",
+        "Valor": 1490000.0
+      },
       {
         "Autor": "Marcelo Crivella",
         "Valor": 716250.0
@@ -123,33 +117,33 @@
     ],
     "total_por_origem": [
       {
-        "Estrutura": "Ministério do Turismo",
-        "Valor": 304647.0
+        "Estrutura": "MINISTERIO DO ESPORTE",
+        "Valor": 4922500.0
       },
       {
-        "Estrutura": "Ministério da Educação - FNDE",
+        "Estrutura": "MINISTÉRIO DA INTEGRAÇÃO E DO DESENVOLVIMENTO REGIONAL",
+        "Valor": 1716250.0
+      },
+      {
+        "Estrutura": "MINISTERIO DA EDUCACAO - FUNDO NACIONAL DE DESENVOLVIMENTO DA EDUCACAO",
         "Valor": 500000.0
       },
       {
-        "Estrutura": "Ministério do Esporte",
-        "Valor": 4932500.0
-      },
-      {
-        "Estrutura": "Ministério da Integração e do Desenvolvimento Regional",
-        "Valor": 1716250.0
+        "Estrutura": "MINISTERIO DO TURISMO",
+        "Valor": 304647.0
       }
     ],
     "total_por_funcao": [
       {
         "Estrutura": "Esporte",
-        "Valor": 4932500.0
+        "Valor": 4922500.0
       },
       {
         "Estrutura": "Segurança Pública",
         "Valor": 1000000.0
       },
-       {
-        "Estrutura": "Infrastrutura",
+      {
+        "Estrutura": "Infraestrutura",
         "Valor": 716250.0
       },
       {
@@ -157,32 +151,10 @@
         "Valor": 500000.0
       },
       {
-        "Estrutura": "Turismo",
+        "Estrutura": "Cultura",
         "Valor": 304647.0
       }
     ],
-    "total_por_ano": [
-      {
-        "Ano": "2021",
-        "Valor": 0
-      },
-      {
-        "Ano": "2022",
-        "Valor": 1541500
-      },
-      {
-        "Ano": "2023",
-        "Valor": 222165.7
-      },
-      {
-        "Ano": "2024",
-        "Valor": 6586692.2
-      },
-      {
-        "Ano": "2025",
-        "Valor": 7443197.0
-      }
-    ],
-    "total_geral": 7443197.0
+    "total_geral": 7443397.0
   }
 }

@@ -6,7 +6,7 @@ import TopResourcesChart from "@/components/TopResourcesChart";
 import {
   Wallet,
   BarChart3,
-  Calendar,
+  Target,
   Globe,
   Activity,
   ArrowRight,
@@ -16,6 +16,7 @@ import ParliamentaryAmendmentsTable from "@/components/ParliamentaryAmendmentsTa
 export default function Home() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [categoriaLider, setCategoriaLider] = useState<any>(null);
 
   useEffect(() => {
     fetch("/data.json")
@@ -23,6 +24,14 @@ export default function Home() {
       .then(json => {
         setData(json);
         setLoading(false);
+        const categoriaLider = Object.entries(
+          json.raw_data?.reduce((acc: any, item: any) => {
+            acc[item.categoria] =
+              (acc[item.categoria] || 0) + item.valor_previsto;
+            return acc;
+          }, {})
+        ).reduce((a: any, b: any) => (a[1] > b[1] ? a : b));
+        setCategoriaLider(categoriaLider);
       })
       .catch(() => setLoading(false));
   }, []);
@@ -41,15 +50,11 @@ export default function Home() {
       </div>
     );
 
-  const {
-    total_geral,
-    total_por_autor,
-    total_por_origem,
-    total_por_funcao,
-    total_por_ano,
-  } = data.metrics;
+  const { total_geral, total_por_autor, total_por_origem, total_por_funcao } =
+    data.metrics;
 
   const raw_data = data.raw_data;
+  console.log("teste:", categoriaLider);
 
   return (
     <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
@@ -102,23 +107,25 @@ export default function Home() {
           />
           <MetricCard
             title="Fonte de Origem Principal"
-            value={total_por_origem[0].Estrutura}
+            value={total_por_origem[0].Estrutura.replace(
+              "MINISTERIO DO",
+              "Min. do"
+            )}
             subtitle="Maior fonte de recursos"
             icon={<BarChart3 />}
           />
-          {/* <MetricCard
-            title="Pico Histórico"
-            value="Outubro"
-            subtitle="Maior atividade financeira"
-            icon={<Calendar />}
-          /> */}
+          <MetricCard
+            title="Destino Principal"
+            value={categoriaLider[0]}
+            subtitle={`Com mais de R$ ${(categoriaLider[1] / 1_000_000).toFixed(2)}M alocados`}
+            icon={<Target />}
+          />
           <MetricCard
             title="Autores"
             value={total_por_autor.length}
             subtitle="Quantidade de Parlamentares Contribuintes"
             icon={<Globe />}
           />
-          <MetricCard title="" value={""} subtitle="" icon={""} />
         </section>
 
         {/* Charts Section - 2/3 and 1/3 split */}
@@ -149,7 +156,7 @@ export default function Home() {
         </div> */}
 
         {/* Bottom Banner Section */}
-        {/* <section className="bg-primary p-16 rounded-[3.5rem] flex flex-col xl:flex-row items-center justify-between gap-12">
+        <section className="bg-primary p-16 rounded-[3.5rem] flex flex-col xl:flex-row items-center justify-between gap-12">
           <div className="max-w-xl">
             <h2 className="text-background text-6xl font-black leading-[0.85] mb-6 uppercase italic tracking-tighter">
               Parlamentares <br /> que mais contribuíram
@@ -161,7 +168,7 @@ export default function Home() {
           <div className="w-full xl:flex-1 bg-background/10 backdrop-blur-3xl rounded-[2rem] p-10 border border-white/10 shadow-3xl">
             <TopResourcesChart data={total_por_autor} />
           </div>
-        </section> */}
+        </section>
 
         <div className="w-full mt-10">
           <ParliamentaryAmendmentsTable data={raw_data} />
