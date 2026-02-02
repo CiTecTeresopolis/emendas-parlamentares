@@ -109,7 +109,7 @@ export default function Home() {
             title="Fonte de Origem Principal"
             value={total_por_origem[0].Estrutura.replace(
               "MINISTERIO DO",
-              "Min. do"
+              "Min."
             )}
             subtitle="Maior fonte de recursos"
             icon={<BarChart3 />}
