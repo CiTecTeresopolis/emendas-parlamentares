@@ -54,8 +54,6 @@ export default function Home() {
     data.metrics;
 
   const raw_data = data.raw_data;
-  console.log("teste:", categoriaLider);
-
   return (
     <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
       {/* Header Full Width */}
@@ -81,10 +79,10 @@ export default function Home() {
           <div className="flex items-center gap-12">
             <div className="hidden xl:block">
               <p className="text-[10px] text-muted-foreground uppercase font-bold tracking-[0.2em] mb-1">
-                Total Liberado
+                Total Proposto
               </p>
               <p className="text-2xl font-mono font-bold text-foreground italic leading-none">
-                R$ {(total_geral / 1_000_000).toFixed(2)}M
+                R$ {(total_geral / 1_000_000).toFixed(2)} Milhões
               </p>
             </div>
             <a href="/EMENDAS_2025.xlsx" download="EMENDAS_2025.xlsx">
@@ -101,7 +99,7 @@ export default function Home() {
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <MetricCard
             title="Capital Alocado"
-            value={`R$ ${(total_geral / 1_000_000).toFixed(1)}M`}
+            value={`R$ ${(total_geral / 1_000_000).toFixed(1)} Milhões`}
             subtitle="Volume total processado"
             icon={<Wallet />}
           />
@@ -115,7 +113,7 @@ export default function Home() {
             icon={<BarChart3 />}
           />
           <MetricCard
-            title="Principal Atividade Contemplada"
+            title="Maior Recurso Proposto"
             value={categoriaLider[0]}
             subtitle={`Com mais de R$ ${(categoriaLider[1] / 1_000_000).toFixed(2)}M alocados`}
             icon={<Target />}
@@ -162,11 +160,11 @@ export default function Home() {
               Parlamentares <br /> que mais contribuíram
             </h2>
             <p className="text-background/70 text-xl font-medium tracking-tight">
-              5 parlamentares que mais liberaram recursos para o município.
+              3 parlamentares que mais destinaram recursos para o município.
             </p>
           </div>
           <div className="w-full xl:flex-1 bg-background/10 backdrop-blur-3xl rounded-[2rem] p-10 border border-white/10 shadow-3xl">
-            <TopResourcesChart data={total_por_autor} />
+            <TopResourcesChart data={total_por_autor.slice(0, 3)} />
           </div>
         </section>
 
