@@ -98,7 +98,7 @@ export default function Home() {
         {/* KPI Grid - 100% Width */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <MetricCard
-            title="Capital Alocado"
+            title="Recurso Destinado"
             value={`R$ ${(total_geral / 1_000_000).toFixed(2)} Milhões`}
             subtitle="Volume total processado"
             icon={<Wallet />}
