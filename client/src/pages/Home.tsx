@@ -153,9 +153,9 @@ export default function Home() {
         </div> */}
 
         {/* Bottom Banner Section */}
-        <section className="bg-primary p-16 rounded-[3.5rem] flex flex-col xl:flex-row items-center justify-between gap-8">
+        <section className="bg-primary p-16 rounded-[3.5rem] flex flex-col xl:flex-row  justify-between gap-8">
           <div className="max-w-xl">
-            <h2 className="text-background text-6xl font-black leading-[0.85] mb-6 uppercase italic tracking-tighter">
+            <h2 className="text-background text-3xl font-black leading-[0.85] mb-6 uppercase italic tracking-tighter">
               Parlamentares <br /> que mais contribuíram
             </h2>
             <p className="text-background/70 text-xl font-medium tracking-tight">

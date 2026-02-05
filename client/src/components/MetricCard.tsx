@@ -31,7 +31,7 @@ export default function MetricCard({
         <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-[0.3em] mb-2">
           {title}
         </p>
-        <h3 className="text-5xl font-black text-foreground mb-3 tracking-tighter italic leading-none">
+        <h3 className="text-3xl font-black text-foreground mb-3 tracking-tighter italic leading-none">
           {value}
         </h3>
         <p className="text-xs text-primary/60 font-medium tracking-tight italic opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-500">
