@@ -12,11 +12,15 @@ import {
 export default function TopResourcesChart({ data }: { data: any[] }) {
   return (
     <div className="w-full h-[450px] bg-transparent">
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer
+        width="100%"
+        height="100%"
+        // style={{ backgroundColor: "red" }}
+      >
         <BarChart
           data={data}
           layout="vertical"
-          margin={{ top: 20, right: 120, left: 40, bottom: 20 }}
+          margin={{ top: 20, right: 120, left: -50, bottom: 20 }}
           style={{ overflow: "visible" }}
         >
           <CartesianGrid

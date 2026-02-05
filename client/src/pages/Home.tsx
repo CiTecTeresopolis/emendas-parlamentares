@@ -118,9 +118,9 @@ export default function Home() {
             icon={<Target />}
           />
           <MetricCard
-            title="Autores"
+            title="Proponentes"
             value={total_por_autor.length}
-            subtitle="Quantidade de Autores das Emendas"
+            subtitle="Quantidade de Proponentes das Emendas"
             icon={<Globe />}
           />
         </section>
@@ -153,7 +153,7 @@ export default function Home() {
         </div> */}
 
         {/* Bottom Banner Section */}
-        <section className="bg-primary p-16 rounded-[3.5rem] flex flex-col xl:flex-row items-center justify-between gap-12">
+        <section className="bg-primary p-16 rounded-[3.5rem] flex flex-col xl:flex-row items-center justify-between gap-8">
           <div className="max-w-xl">
             <h2 className="text-background text-6xl font-black leading-[0.85] mb-6 uppercase italic tracking-tighter">
               Parlamentares <br /> que mais contribuíram
@@ -162,7 +162,7 @@ export default function Home() {
               3 parlamentares que mais destinaram recursos para o município.
             </p>
           </div>
-          <div className="w-full xl:flex-1 bg-background/10 backdrop-blur-3xl rounded-[2rem] p-10 border border-white/10 shadow-3xl">
+          <div className="w-full xl:flex-1 bg-background/10 backdrop-blur-3xl rounded-[2rem] p-0 border border-white/10 shadow-3xl">
             <TopResourcesChart data={total_por_autor.slice(0, 3)} />
           </div>
         </section>
